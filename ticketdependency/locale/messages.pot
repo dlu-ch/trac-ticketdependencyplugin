@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: TicketDependencyPlugin 0.1\n"
 "Report-Msgid-Bugs-To: https://trac-"
 "hacks.org/wiki/TicketDependencyPlugin\n"
-"POT-Creation-Date: 2017-06-22 09:44+0200\n"
+"POT-Creation-Date: 2017-06-23 08:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,15 +31,15 @@ msgstr ""
 msgid "Dependencies"
 msgstr ""
 
-#: ticketdependency/web_ui.py:72
+#: ticketdependency/web_ui.py:70
 msgid "(A ► B: A depends on B)"
 msgstr ""
 
-#: ticketdependency/web_ui.py:97
+#: ticketdependency/web_ui.py:95
 msgid "added"
 msgstr ""
 
-#: ticketdependency/web_ui.py:107
+#: ticketdependency/web_ui.py:105
 msgid "removed"
 msgstr ""
 
