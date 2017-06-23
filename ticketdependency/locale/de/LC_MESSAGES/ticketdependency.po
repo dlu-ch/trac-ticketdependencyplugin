@@ -1,0 +1,47 @@
+# German translations for ticketdependency.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the
+# ticketdependency project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ticketdependency 0.2\n"
+"Report-Msgid-Bugs-To: https://trac-hacks.org/wiki/TicketDependencyPlugin\n"
+"POT-Creation-Date: 2017-06-22 09:44+0200\n"
+"PO-Revision-Date: 2017-06-21 08:11+0200\n"
+"Last-Translator: Daniel Lutz\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: ticketdependency/api.py:59
+#, fuzzy
+msgid "Not a (decimal) ticked ID: {token}"
+msgstr "Keine (dezimale) Ticket-ID: {token}"
+
+#: ticketdependency/api.py:64
+#, fuzzy
+msgid "Ticket must not depend on itself"
+msgstr "Ticket darf nicht von sich selbst abhängen"
+
+#: ticketdependency/model.py:20
+msgid "Dependencies"
+msgstr "Abhängigkeiten"
+
+#: ticketdependency/web_ui.py:72
+#, fuzzy
+msgid "(A ► B: A depends on B)"
+msgstr "(A ► B: A hängt ab von B)"
+
+#: ticketdependency/web_ui.py:97
+msgid "added"
+msgstr "hinzugefügt"
+
+#: ticketdependency/web_ui.py:107
+msgid "removed"
+msgstr "entfernt"
+

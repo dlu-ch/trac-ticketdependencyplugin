@@ -1,0 +1,45 @@
+# Translations template for TicketDependencyPlugin.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the
+# TicketDependencyPlugin project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TicketDependencyPlugin 0.1\n"
+"Report-Msgid-Bugs-To: https://trac-"
+"hacks.org/wiki/TicketDependencyPlugin\n"
+"POT-Creation-Date: 2017-06-22 09:44+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: ticketdependency/api.py:59
+msgid "Not a (decimal) ticked ID: {token}"
+msgstr ""
+
+#: ticketdependency/api.py:64
+msgid "Ticket must not depend on itself"
+msgstr ""
+
+#: ticketdependency/model.py:20
+msgid "Dependencies"
+msgstr ""
+
+#: ticketdependency/web_ui.py:72
+msgid "(A ► B: A depends on B)"
+msgstr ""
+
+#: ticketdependency/web_ui.py:97
+msgid "added"
+msgstr ""
+
+#: ticketdependency/web_ui.py:107
+msgid "removed"
+msgstr ""
+
