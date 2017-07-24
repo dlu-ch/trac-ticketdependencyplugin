@@ -52,8 +52,8 @@ class TicketDependencyTemplateStreamFilter(trac.core.Component):
                 field["label"] = _(model.TICKETREF_LABEL)
                 ticket = data["ticket"]
 
-                rendered_lines=[]
-                subticket_ids = model.ticket_ids_from_field_value(ticket[model.TICKETREF])
+                rendered_lines = []
+                subticket_ids = model.ticket_ids_from_field_value(ticket[model.TICKETREF])  # None if new
                 if subticket_ids:
                     rendered_lines.append(self._link_ticket_list(req, subticket_ids))
                 superticket_ids = model.query_supertickets(self.env, ticket.id)

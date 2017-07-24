@@ -69,11 +69,12 @@ def tokens_from_field_value(value):
 def parse_field_value(value):
     ids = set()
     invalid_tokens = set()
-    for token in tokens_from_field_value(value):
-        try:
-            ids.add(int(token, 10))
-        except ValueError:
-            invalid_tokens.add(token)
+    if value:
+        for token in tokens_from_field_value(value):
+            try:
+                ids.add(int(token, 10))
+            except ValueError:
+                invalid_tokens.add(token)
     return ids, invalid_tokens
 
 
@@ -83,8 +84,8 @@ def ticket_ids_from_field_value(value):
 
     param value:
         value of custom field ``TICKETREF``
-        (decimal representations of ticket IDs, separated by space or comma)
-    type value: str
+        (decimal representations of ticket IDs, separated by space or comma or ``None``)
+    type value: str | None
     rtype: set(int)
     """
     ids, _ = parse_field_value(value)
@@ -97,4 +98,7 @@ def field_value_from_ticket_ids(ticket_ids):
 
 assert parse_field_value('   5   ,,a,b, c\td\n  123,,, 0123, 0x123   ') \
     == (set([5, 123]), set(['a', 'b', 'c\td\n', '0x123']))
+assert parse_field_value('   ') == (set(), set())
+assert parse_field_value(None) == (set(), set())
+
 assert field_value_from_ticket_ids(ticket_ids_from_field_value('0,1 234')) == '0 1 234'
