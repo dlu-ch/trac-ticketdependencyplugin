@@ -20,7 +20,7 @@ from babel.messages import frontend as babel  # Debian: python-pybabel
 
 NAME = 'TicketDependencyPlugin'
 PACKAGE = 'ticketdependency'
-VERSION = '0.1'
+VERSION = '1.0'
 
 setuptools.setup(
     name=NAME,
@@ -57,4 +57,3 @@ setuptools.setup(
         ]
     },
 )
-
